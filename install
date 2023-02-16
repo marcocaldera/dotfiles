@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-STOW_FOLDERS="tmux,vim"
+STOW_FOLDERS="tmux,vim,bin"
 for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
 
 do
@@ -8,3 +8,6 @@ do
     stow -D $folder
     stow $folder
 done
+
+# Set scripts to be executable
+find bin/.local/scripts -type f -exec chmod +x {} \;
