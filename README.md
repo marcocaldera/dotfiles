@@ -1,4 +1,5 @@
 ### Prerequisites
+
 ```
 brew install stow
 ```
@@ -6,6 +7,6 @@ brew install stow
 ### Installation
 
 ```
-chmod +x ./install.sh
-./install.sh
-``` 
+chmod +x ./install
+./install
+```
