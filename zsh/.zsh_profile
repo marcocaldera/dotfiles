@@ -1,0 +1,49 @@
+source ~/.zsh_profile_work
+
+#######################################
+# FUNCTIONS
+#######################################
+
+function lazygit() {
+    git add -A
+    git commit -a -m "$*"
+    git push
+}
+
+function lazygitNoVerify() {
+    git add -A
+    git commit -a -m "$*"
+    git push --no-verify
+}
+
+function gitMainClean() {
+    git switch main
+    git pull
+    yarn
+    cd ios && bundle exec pod install
+    cd ..
+}
+
+#######################################
+## KEY BINDING 
+########################################
+
+bindkey -s '^f' "~/.local/scripts/tmux-sessionizer\n"
+bindkey '^ ' autosuggest-accept
+#bindkey -r i run-shell "tmux neww cht.sh"
+#bindkey '^p' "vim $(fzf)"
+
+#######################################
+# ALIAS
+#######################################
+
+alias :soz="source ~/.zshrc"
+alias pixelEmulatorAPI33='emulator -avd Pixel_3a_API_33'
+alias gitbc="git branch --show-current | tr -d '\n' | pbcopy" # copy current branch name
+alias personal="cd ~/personal" 
+alias work="cd ~/work"
+alias hs='history | grep'
+alias vf="find ./ -mindepth 1 -maxdepth 1 | fzf --print0 | xargs -0 -o vim"
+alias gitwls="git worktree list"
+alias myip="curl https://ipinfo.io/json"
+alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
