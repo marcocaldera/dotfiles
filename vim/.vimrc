@@ -43,4 +43,11 @@ nnoremap <leader><CR> :so ~/.vimrc<CR>
 nnoremap <C-p> :GFiles<CR> 
 nnoremap <leader>pf :Files<CR>
 nnoremap <silent><leader>1 :source ~/.vimrc \| :PlugInstall<CR>
+nnoremap <silent><leader>t :Rex<CR>
+" Add empty line without leaving normal mode
+nnoremap <Leader>o o<Esc>
+nnoremap <Leader>O O<Esc>
 inoremap jk <ESC>
+" Indent in visual mode
+vnoremap <Tab> >
+vnoremap <S-Tab> <
