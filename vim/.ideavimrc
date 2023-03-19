@@ -1,2 +1,4 @@
 set relativenumber 
 inoremap jk <ESC>
+inoremap JK <ESC>
+
