@@ -24,10 +24,16 @@ Plug 'psliwka/vim-smoothie'
 Plug 'pangloss/vim-javascript'    
 Plug 'leafgarland/typescript-vim'
 Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'rust-lang/rust.vim'
 Plug 'tomasiser/vim-code-dark'
+Plug 'dense-analysis/ale'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 colorscheme codedark
+
+" rust formatter on save
+let g:rustfmt_autosave = 1
 
 "  la mia leader key è spazio " "
 let mapleader = " "
@@ -48,6 +54,7 @@ nnoremap <silent><leader>t :Rex<CR>
 nnoremap <Leader>o o<Esc>
 nnoremap <Leader>O O<Esc>
 inoremap jk <ESC>
+inoremap JK <ESC>
 " Indent in visual mode
 vnoremap <Tab> >
 vnoremap <S-Tab> <
