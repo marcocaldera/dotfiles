@@ -5,10 +5,11 @@ for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
 
 do
     echo "stow $folder"
-        stow -D $folder
+    stow -D $folder
     stow $folder
 done
 
 # Set scripts to be executable
 find bin/.local/scripts -type f -exec chmod +x {} \;
+find bin/.raycast/scripts -type f -exec chmod +x {} \;
 find personal/.raycast/scripts -type f -exec chmod +x {} \;
