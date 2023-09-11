@@ -3,7 +3,7 @@
 # Required parameters:
 # @raycast.schemaVersion 1
 # @raycast.title dotfiles update
-# @raycast.mode fullOutput
+# @raycast.mode inline
 #
 # Optional parameters:
 # @raycast.packageName Script
