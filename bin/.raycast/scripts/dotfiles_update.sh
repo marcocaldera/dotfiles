@@ -14,5 +14,6 @@ git add -A && git commit -m "feat: update personal dotfiles" && git push
 
 cd ~/dotfiles
 git submodule update --init --force --remote
+git add -A && git commit -m "feat: update general dotfiles" && git push
 
 ./install
