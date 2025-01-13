@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-STOW_FOLDERS="tmux,vim,bin,zsh,personal"
+STOW_FOLDERS="tmux,vim,bin,zsh,personal,work"
 for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
 
 do
@@ -13,3 +13,4 @@ done
 find bin/.local/scripts -type f -exec chmod +x {} \;
 find bin/.raycast/scripts -type f -exec chmod +x {} \;
 find personal/.raycast/scripts -type f -exec chmod +x {} \;
+find work/.raycast/scripts -type f -exec chmod +x {} \;
