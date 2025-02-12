@@ -1,5 +1,4 @@
-source ~/.zsh_profile_work
-source ~/.zsh_profile_personal
+source ~/.zsh_profile_work source ~/.zsh_profile_personal
 
 #######################################
 # FUNCTIONS
