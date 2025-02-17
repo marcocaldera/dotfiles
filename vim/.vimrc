@@ -58,3 +58,8 @@ inoremap JK <ESC>
 " Indent in visual mode
 vnoremap <Tab> >
 vnoremap <S-Tab> <
+
+" Map Command+d to scroll down half page
+nnoremap <D-d> <C-d>
+" Map Command+u to scroll up half page
+nnoremap <D-u> <C-u>
