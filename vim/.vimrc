@@ -63,3 +63,5 @@ vnoremap <S-Tab> <
 nnoremap <D-d> <C-d>
 " Map Command+u to scroll up half page
 nnoremap <D-u> <C-u>
+nnoremap <D-e> <C-e>
+nnoremap <D-y> <C-y>
