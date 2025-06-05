@@ -10,7 +10,7 @@
 matches:
   # Simple text replacement
   - trigger: ":espanso"
-    replace: "Hi there! I'm Marco Caldera"
+    replace: "Hi there! I'm Marco"
 
   # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
 
@@ -35,12 +35,12 @@ matches:
           cmd: "echo 'Hello from your shell'"
 
   # Get current weather condition
-  - trigger: ":weather"
+  - trigger: ":wt"
     replace: "{{weather}}"
     vars:
       - name: weather
         type: shell
         params:
-          cmd: "curl -s 'wttr.in?format=3'"
+          cmd: "curl -s 'wttr.in/Amsterdam?format=4'"
 
   # And much more! For more information, visit the docs: https://espanso.org/docs/
