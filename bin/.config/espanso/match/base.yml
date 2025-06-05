@@ -12,10 +12,6 @@ matches:
   - trigger: ":espanso"
     replace: "Hi there! I'm Marco"
 
-  # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
-
-  # But matches can also be dynamic:
-
   # Print the current date
   - trigger: ":date"
     replace: "{{mydate}}"
@@ -25,7 +21,6 @@ matches:
         params:
           format: "%m/%d/%Y"
 
-  # Print the output of a shell command
   - trigger: ":shell"
     replace: "{{output}}"
     vars:
