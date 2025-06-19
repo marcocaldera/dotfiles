@@ -1,0 +1,7 @@
+matches:
+  - trigger: ":ticket"
+    replace: |
+      API integration:
+        - 
+      Description:
+        -

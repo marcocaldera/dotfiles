@@ -13,5 +13,13 @@ matches:
       [░ ░ ░ ░ ░]
 
       Explanation:
+    
+  - trigger: ":staff-eval-project"
+    replace: |
+      Energy: -1
+      Social Capital: +1
+      Credibility: +1
+      Skills: +2
+      Quality of life: +1
 
   # And much more! For more information, visit the docs: https://espanso.org/docs/
